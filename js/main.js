@@ -119,3 +119,37 @@ $(document).ready(function () {
     });
   }
 });
+
+$(document).ready(function () {
+  // Hide the modal on page load
+  $(".modal").hide();
+
+  // Find all the div elements with "chui" class name
+  $(
+    "#burana, #kol-kogur, #kegetinskiy-vodopad, #sulayman-too, #pik-lenina, #vodopad-abshir-ata , #ozero-son-kol, #ozero-kol-suu, #tash-rabat ,#ozero-besh-tash, #manas-ordo,#ushelye-karavshan,  #ushelye-geti-oguz, #ushelye-karakol, #kanyon-skazka, #zapovednik-sary-chelek, #ozero-toktogul"
+  ).click(function () {
+    // Get the content of the clicked div
+    var content = $(this).html();
+
+    // Create a jQuery object from the obtained content
+    var $content = $(content);
+    // Find the element you want to modify by its selector
+    var $description = $content.find("#description");
+    // Modify its CSS properties
+    $description.css("display", "inline-block");
+
+    $content.find("img").css("width", "50%");
+    $content.find("img").css("height", "50%");
+    $content.find("img").css("margin-bottom", "35px");
+    // Insert the content into the modal body
+    $(".modal-body").html($content);
+
+    // Display the modal
+    $(".modal").show();
+  });
+
+  // Close the modal when the user clicks on the close button
+  $(".close").click(function () {
+    $(".modal").hide();
+  });
+});
