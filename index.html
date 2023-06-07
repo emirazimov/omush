@@ -32,38 +32,16 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAubahwwVBkFEkRdwxgIU-EejzAOWGtEnU&libraries=places"></script>
   </head>
   <body>
     <div class="protfolio-wrap">
       <!-- Start Header Area -->
       <header class="default-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="text-white lnr lnr-menu"></span>
-            </button>
-
-            <!-- <div
-              class="collapse navbar-collapse justify-content-end align-items-center"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav">
-                <li><a href="./Pages-inside/blog.html">Blogs</a></li>
-                <li><a href="#portfolio">Places</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="./Pages-inside/About.html">About Us</a></li>
-              </ul>
-            </div> -->
-          </div>
-        </nav>
+        <div class="localization-buttons-container">
+          <span id="enButton">EN</span><span class="divider">/</span
+          ><span id="ruButton">RU</span>
+        </div>
       </header>
       <!-- End Header Area -->
       <!-- start banner Area -->
@@ -74,9 +52,14 @@
             class="row fullscreen d-flex align-items-center justify-content-center"
           >
             <div class="banner-content col-lg-10 main-button">
-              <h5 class="text-uppercase">станьте частью этого путешествия</h5>
-              <h1>Наш прекрасный Кыргызстан</h1>
-              <a href="#portfolio" class="primary-btn text-uppercase"
+              <h5 class="text-uppercase" data-i18n-key="stanteChastyuEtogo">
+                станьте частью этого путешествия
+              </h5>
+              <h1 data-i18n-key="nashPrekrasniy">Наш прекрасный Кыргызстан</h1>
+              <a
+                href="#portfolio"
+                class="primary-btn text-uppercase"
+                data-i18n-key="poehali"
                 >ПОЕХАЛИ!</a
               >
             </div>
@@ -91,22 +74,30 @@
           <div class="row d-flex justify-content-center">
             <div class="menu-content col-lg-10">
               <div class="title text-center">
-                <h1 class="mb-10">Вам понравиться кыргызстан</h1>
-                <p>Все интересные места кыргызстана</p>
+                <h1 class="mb-10" data-i18n-key="vamPonravitsyaKR">
+                  Вам понравиться кыргызстан
+                </h1>
+                <p data-i18n-key="vseInterseniyeMesta">
+                  Все интересные места кыргызстана
+                </p>
               </div>
             </div>
           </div>
 
           <div class="filters">
             <ul>
-              <li class="active" data-filter="*">Все</li>
-              <li data-filter=".chui">Чуй</li>
-              <li data-filter=".osh">Ош</li>
-              <li data-filter=".naryn">Нарын</li>
-              <li data-filter=".talas">Талас</li>
-              <li data-filter=".batken">Баткен</li>
-              <li data-filter=".issyk-kul">Иссык-куль</li>
-              <li data-filter=".jalal-abad">Жалал-абад</li>
+              <li class="active" data-filter="*" data-i18n-key="vse">Все</li>
+              <li data-filter=".chui" data-i18n-key="chui">Чуй</li>
+              <li data-filter=".osh" data-i18n-key="osh">Ош</li>
+              <li data-filter=".naryn" data-i18n-key="naryn">Нарын</li>
+              <li data-filter=".talas" data-i18n-key="talas">Талас</li>
+              <li data-filter=".batken" data-i18n-key="batken">Баткен</li>
+              <li data-filter=".issyk-kul" data-i18n-key="issykKul">
+                Иссык-куль
+              </li>
+              <li data-filter=".jalal-abad" data-i18n-key="jalalAbad">
+                Жалал-абад
+              </li>
             </ul>
           </div>
 
@@ -117,10 +108,16 @@
                   <img src="./img/burana1.jpg" alt="Work 1" />
                   <div class="p-inner">
                     <h4>
-                      <p>Башня бурана</p>
+                      <p data-i18n-key="burana">Башня бурана</p>
                     </h4>
-                    <div class="cat">Смотровые площадки и башни</div>
-                    <p id="description" style="display: none; text-align: left">
+                    <div class="cat" data-i18n-key="buranaReferences">
+                      Смотровые площадки и башни
+                    </div>
+                    <p
+                      id="description"
+                      style="display: none; text-align: left"
+                      data-i18n-key="buranaDescription"
+                    >
                       Башня Бурана — минарет IX—XI веков государства Караханидов
                       в Чуйской долине на севере Киргизии. Расположена в 80 км
                       от столицы Бишкека, в 12 км к юго-западу от города Токмак
@@ -157,9 +154,15 @@
                 <div class="item">
                   <img src="./img/kel-kogur-lake.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h4>Озеро Коль-Когур</h4>
-                    <div class="cat">Водоемы</div>
-                    <div id="description" style="display: none">
+                    <h4 data-i18n-key="kolKogur">Озеро Коль-Когур</h4>
+                    <div class="cat" data-i18n-key="kolKogurReferences">
+                      Водоемы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="kolKogurDescription"
+                    >
                       Горное озеро Кель-Когур считается одним из красивых озер
                       Кыргызстана! В солнечную погоду озеро имеет шикарное
                       отражение воды в которой отражаются облака, голубое небо и
@@ -183,11 +186,20 @@
                 <div class="item">
                   <img src="img/waterfall-kegety.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Кегетинский водопад</h5>
-                    <div class="cat">
+                    <h5 data-i18n-key="kegetinskiyVodopad">
+                      Кегетинский водопад
+                    </h5>
+                    <div
+                      class="cat"
+                      data-i18n-key="kegetinskiyVodopadReferences"
+                    >
                       Природные и заповедные зоны • Водопады
                     </div>
-                    <div id="description" style="display: none">
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="kegetinskiyVodopadDescription"
+                    >
                       Большой водопад Кегеты Водопад расположен в ущелье Кегеты
                       который находится в Чуйской области 18 км. южнее от г.
                       Токмак и 50 км. восточнее столицы Республики г. Бишкек.
@@ -208,9 +220,15 @@
                 <div class="item">
                   <img src="img/sulayman-too.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Сулайман Тоо</h5>
-                    <div class="cat">Исторические музеи</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="sulaymanToo">Сулайман Тоо</h5>
+                    <div class="cat" data-i18n-key="sulaymanTooReferences">
+                      Исторические музеи
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="sulaymanTooDescription"
+                    >
                       Гора Сулайман-Тоо является первым в Кыргызстане памятником
                       Всемирного наследия ЮНЕСКО. Она расположена в центре
                       города Ош и возвышается на 175 м над ним. С давних времен
@@ -238,9 +256,15 @@
                 <div class="item">
                   <img src="img/pik-lenina.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h4>Пик Ленина</h4>
-                    <div class="cat">Горы</div>
-                    <div id="description" style="display: none">
+                    <h4 data-i18n-key="pikLenina">Пик Ленина</h4>
+                    <div class="cat" data-i18n-key="pikLeninaReferences">
+                      Горы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="pikLeninaDescription"
+                    >
                       Все восхождения на пик Ленина начинаются из города Ош,
                       откуда по Памирскому тракту через перевал Талдык (3615
                       метров) на автомашинах повышенной проходимости можно
@@ -267,9 +291,15 @@
                 <div class="item">
                   <img src="img/vodopad-abshir-ata.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h4>Водопад Абшыр-ата</h4>
-                    <div class="cat">Водопады</div>
-                    <div id="description" style="display: none">
+                    <h4 data-i18n-key="vodopadAbshirAta">Водопад Абшыр-ата</h4>
+                    <div class="cat" data-i18n-key="vodopadAbshirAtaReferences">
+                      Водопады
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="vodopadAbshirAtaDescription"
+                    >
                       Национальный парк Абшир-Ата расположен в 70 км от города
                       Оша в Киргизии, на высоте 1500 – 2500 м, и знаменит
                       красивым ущельем реки Абшир-Сай и необычным водопадом
@@ -299,9 +329,15 @@
                 <div class="item">
                   <img src="img/ozero-son-kol.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Озеро Сонкёль</h5>
-                    <div class="cat">Водоемы</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="ozeroSonKol">Озеро Сонкёль</h5>
+                    <div class="cat" data-i18n-key="ozeroSonKolReferences">
+                      Водоемы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="ozeroSonKolDescription"
+                    >
                       Озеро Сон-Куль расположено в самом сердце Внутреннего
                       Тянь-Шаня в 90 км к северо-западу от г. Нарына. Котловина
                       длиной 57 км и шириной 29 км располагается внутри мощных
@@ -340,9 +376,15 @@
                 <div class="item">
                   <img src="img/ozero-kol-suu.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Озеро Кёль-суу</h5>
-                    <div class="cat">Водоемы</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="ozeroKolSuu">Озеро Кёль-суу</h5>
+                    <div class="cat" data-i18n-key="ozeroKolSuuReferences">
+                      Водоемы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="ozeroKolSuuDescription"
+                    >
                       Высокогорное озеро Кёль-Суу находится в южной части
                       Ак-Сайской долины на высоте 3,514 метров над уровнем моря.
                       Озеро привлекает туристов со всего света своей нетронутой
@@ -362,9 +404,15 @@
                 <div class="item">
                   <img src="img/tash-rabat.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h4>Таш Рабат</h4>
-                    <div class="cat">Долины</div>
-                    <div id="description" style="display: none">
+                    <h4 data-i18n-key="tashRabat">Таш Рабат</h4>
+                    <div class="cat" data-i18n-key="tashRabatReferences">
+                      Долины
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="tashRabatDescription"
+                    >
                       Примерно в 520 км от Бишкека, 125 км (1.5 часа) от Нарына,
                       17 км от конца асфальтированной дороги (сразу после
                       запасной взлётной полосы) 90 км (1.5 часа) до границы в
@@ -418,9 +466,15 @@
                 <div class="item">
                   <img src="img/ozero-besh-tash.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h4>Озеро Беш Таш</h4>
-                    <div class="cat">Природные и заповедные зоны</div>
-                    <div id="description" style="display: none">
+                    <h4 data-i18n-key="ozeroBeshTash">Озеро Беш Таш</h4>
+                    <div class="cat" data-i18n-key="ozeroBeshTashReferences">
+                      Природные и заповедные зоны
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="ozeroBeshTashDescription"
+                    >
                       Высокогорное озеро Беш-Таш находится в одноименной долине
                       на высоте 2997 м. Глубина озера достигает 28 м. В озере
                       обитают такие рыбы, как: осман, маринка и форель. При
@@ -435,11 +489,15 @@
                 <div class="item">
                   <img src="img/manas-ordo.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Манас Ордо</h5>
-                    <div class="cat">
+                    <h5 data-i18n-key="manasOrdo">Манас Ордо</h5>
+                    <div class="cat" data-i18n-key="manasOrdoReferences">
                       Культурные объекты и достопримечательности
                     </div>
-                    <div id="description" style="display: none">
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="manasOrdoDescription"
+                    >
                       Эпос «Манас» насчитывает более полумиллиона строк. У
                       каждого манасчи — профессионального рассказчика эпоса —
                       есть своя версия. Эта история занимает место глубоко в
@@ -468,9 +526,15 @@
                 <div class="item">
                   <img src="img/ushelye-karavshan.webp" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Ущелье Каравшан</h5>
-                    <div class="cat">Горы</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="ushelyeKaravshan">Ущелье Каравшан</h5>
+                    <div class="cat" data-i18n-key="ushelyeKaravshanReferences">
+                      Горы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="ushelyeKaravshanDescription"
+                    >
                       Ущелье Каравшин находится у Туркестанского хребта. Это
                       прекрасное место называют «Азиатской Патагонией», потому
                       что оно со своими зелеными лугами, быстрыми ручьями и
@@ -496,9 +560,15 @@
                 <div class="item">
                   <img src="img/gora-aygul-tash.webp" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Гора Айгуль-Таш</h5>
-                    <div class="cat">Горы</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="goraAygulTash">Гора Айгуль-Таш</h5>
+                    <div class="cat" data-i18n-key="goraAygulTashReferences">
+                      Горы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="goraAygulTashDescription"
+                    >
                       Гора Айгуль-Таш расположена рядом с селом Кара-Булак в
                       Баткенской области. Гора имеет крутые каменистые склоны.
                       Это место уникально тем, что только здесь произрастает
@@ -523,9 +593,15 @@
                 <div class="item">
                   <img src="img/ushelye-geti-oguz.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Ущелье Джеты-Огуз</h5>
-                    <div class="cat">Горы</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="ushelyeGetiOguz">Ущелье Джеты-Огуз</h5>
+                    <div class="cat" data-i18n-key="ushelyeGetiOguzReferences">
+                      Горы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="ushelyeGetiOguzDescription"
+                    >
                       Живописное ущелье Джеты-Огуз расположено в 28 км к
                       юго-западу от города Каракол. Его название в переводе с
                       кыргызского языка означает «семь быков». Название
@@ -556,9 +632,15 @@
                 <div class="item">
                   <img src="img/kanyon-skazka.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Каньон Сказка</h5>
-                    <div class="cat">Каньоны</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="kanyonSkazka">Каньон Сказка</h5>
+                    <div class="cat" data-i18n-key="kanyonSkazkaReferences">
+                      Каньоны
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="kanyonSkazkaDescription"
+                    >
                       Каньон Сказка, расположенный на южном берегу озера
                       Иссык-Куль, является одним из самых интересных и часто
                       посещаемых природных мест Кыргызстана. Он находится в 120
@@ -600,9 +682,15 @@
                 <div class="item">
                   <img src="img/ushelye-karakol.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Ущелье Кара-кол</h5>
-                    <div class="cat">Каньоны</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="ushelyeKarakol">Ущелье Кара-кол</h5>
+                    <div class="cat" data-i18n-key="ushelyeKarakolReferences">
+                      Каньоны
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="ushelyeKarakolDescription"
+                    >
                       В 5 км к югу от крупнейшего города Иссык-Кульской области,
                       Каракола, расположено одноименное ущелье. Ущелье-каньон
                       имеет протяженность до 40 км и примыкает к хребту Терскей
@@ -634,9 +722,20 @@
                 <div class="item">
                   <img src="img/zapovednik-sary-chelek.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Заповедник Сары-Челек</h5>
-                    <div class="cat">Национальные парки</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="zapovednikSaryChelek">
+                      Заповедник Сары-Челек
+                    </h5>
+                    <div
+                      class="cat"
+                      data-i18n-key="zapovednikSaryChelekReferences"
+                    >
+                      Национальные парки
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="zapovednikSaryChelekDescription"
+                    >
                       Сары-Челекский Государственный Биосферный Заповедник
                       включен в международную сеть заповедников ЮНЕСКО. Он
                       расположился в долине и на склонах Чаткальского и
@@ -669,9 +768,15 @@
                 <div class="item">
                   <img src="img/ozero-toktogul.jpg" alt="Work 1" />
                   <div class="p-inner">
-                    <h5>Озеро Токтогул</h5>
-                    <div class="cat">Водоемы</div>
-                    <div id="description" style="display: none">
+                    <h5 data-i18n-key="ozeroToktogul">Озеро Токтогул</h5>
+                    <div class="cat" data-i18n-key="ozeroToktogulReferences">
+                      Водоемы
+                    </div>
+                    <div
+                      id="description"
+                      style="display: none"
+                      data-i18n-key="ozeroToktogulDescription"
+                    >
                       Токтогульское водохранилище является крупнейшим
                       водохранилищем не только в Кыргызстане, но и во всей
                       Центральной Азии. Его площадь составляет 284 кв. км, а
@@ -695,7 +800,14 @@
           </div>
         </div>
       </section>
-
+      <div class="map-container">
+        <div id="map"></div>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search for a location"
+        />
+      </div>
       <!-- End portfolio-area Area -->
       <div class="modal">
         <span class="close">&times;</span>
@@ -843,76 +955,6 @@
         </div>
       </section> -->
       <!-- End review Area -->
-
-      <!-- start footer Area -->
-      <!-- <footer class="footer-area section-gap">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-6">
-              <div class="single-footer-widget">
-                <h6>Мой дипломный проект</h6>
-                <!-- <p>
-                  We Provide Tour Plans for your most comfortable travel ever.
-                  Let yourself dive into the Beauty, Culture &amp; festivals of
-                  India. Have You're Good time at India.
-                </p> -->
-                <!-- <p class="footer-text">
-                  Copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  All rights reserved | This Website is created with
-                  <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                  <a href="https://github.com/mrjatinchauhan" target="_blank"
-                    >Jatin Chauhan</a
-                  >
-                </p> -->
-              </div>
-            </div>
-            <!-- <div class="col-lg-5 col-md-6 col-sm-6">
-              <div class="single-footer-widget">
-                <h6>Newsletter</h6>
-                <p>Stay update with our latest</p>
-                <div class="" id="mc_embed_signup">
-                  <form
-                    target="_blank"
-                    action=""
-                    method="get"
-                    class="form-inline"
-                  >
-                    <input
-                      class="form-control"
-                      name="EMAIL"
-                      placeholder="Enter Email"
-                      onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Enter Your Email Here '"
-                      required=""
-                      type="email"
-                    />
-                    <button class="click-btn btn btn-default">
-                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </button>
-
-                    <div class="info"></div>
-                  </form>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-              <div class="single-footer-widget">
-                <h6>Follow Us</h6>
-                <p>Let us be social</p>
-                <div class="footer-social d-flex align-items-center">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-snapchat"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                </div>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </footer> -->
       <!-- End footer Area -->
     </div>
     <script src="js/vendor/jquery-2.2.4.min.js"></script>

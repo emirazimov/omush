@@ -1967,6 +1967,8 @@ h6 {
 }
 
 .default-header {
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
   top: 0;
   left: 0;
@@ -2105,7 +2107,7 @@ h6 {
   top: 0;
 }
 
-.protfolio-wrap {
+/* .protfolio-wrap {
   margin: 50px;
 }
 
@@ -2119,7 +2121,7 @@ h6 {
   .protfolio-wrap {
     margin: 10px;
   }
-}
+} */
 
 .section-gap {
   padding: 120px 0;
@@ -2216,7 +2218,7 @@ h6 {
 }
 
 .banner-area {
-  margin-top: -56px;
+  margin-top: -76px;
   border-radius: 10px;
   background: url(../img/kyrgyzstan.jpg) center;
   background-size: cover;
@@ -2747,4 +2749,55 @@ h6 {
     color: black;
     font-size: 31px;
   }
+}
+#description {
+  margin-top: 20px;
+}
+.localization-buttons-container {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+#enButton {
+  color: white;
+  cursor: pointer;
+}
+#enButton:hover {
+  color: #8ab92d;
+}
+#ruButton {
+  color: white;
+  cursor: pointer;
+}
+#ruButton:hover {
+  color: #8ab92d;
+}
+
+.divider {
+  color: white;
+}
+
+.map-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  width: 600px;
+  height: 400px;
+}
+@media (max-width: 610px) {
+  #map {
+    width: 300px;
+    height: 200px;
+  }
+}
+#search-input {
+  width: 170px;
+  height: 32px;
+  margin-top: 20px;
+  margin-bottom: 400px;
 }
