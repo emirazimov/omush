@@ -126,7 +126,7 @@ $(document).ready(function () {
 
   // Find all the div elements with "chui" class name
   $(
-    "#burana, #kol-kogur, #kegetinskiy-vodopad, #sulayman-too, #pik-lenina, #vodopad-abshir-ata , #ozero-son-kol, #ozero-kol-suu, #tash-rabat ,#ozero-besh-tash, #manas-ordo,#ushelye-karavshan,  #ushelye-geti-oguz, #ushelye-karakol, #kanyon-skazka, #zapovednik-sary-chelek, #ozero-toktogul"
+    "#burana, #kol-kogur, #kegetinskiy-vodopad, #sulayman-too, #pik-lenina, #vodopad-abshir-ata , #ozero-son-kol, #ozero-kol-suu, #tash-rabat ,#ozero-besh-tash, #manas-ordo,#ushelye-karavshan, #gora-aygul-tash, #ushelye-geti-oguz, #ushelye-karakol, #kanyon-skazka, #zapovednik-sary-chelek, #ozero-toktogul"
   ).click(function () {
     // Get the content of the clicked div
     var content = $(this).html();
